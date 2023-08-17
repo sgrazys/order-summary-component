@@ -1,0 +1,35 @@
+:root {
+	// COLORS
+
+	//Primary
+	--color--primary-light: #e0e8ff;
+	--color--primary-bright: #3829e0;
+
+	//Secondary
+	--color--secondary-light: #f5f7ff;
+	--color--secondary-bright: #7280a7;
+	--color--secondary-dark: #1f2f56;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+body,
+body *,
+body *::after,
+body *::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	font-family: monospace;
+	height: 100vh;
+	padding: 7rem 2.4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
