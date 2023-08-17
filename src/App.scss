@@ -31,45 +31,97 @@ body {
 	padding: 7rem 2.4rem;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+
 	background-image: url(./images/pattern-background-mobile.svg);
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: contain;
 }
 
 .card {
 	max-width: 32.7rem;
 	background-color: #fff;
-	border-radius: 0.5rem;
+	border-radius: 1.5rem;
 	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	text-align: center;
 
-	&.header {
+	.header {
+		background-image: url(./images/illustration-hero.svg);
+		background-size: cover;
+		height: 16rem;
+		margin-bottom: 1.5rem;
 	}
 
-	&.main {
+	.main {
+		padding: 2rem 2.7rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 	}
 
 	&__heading {
+		font-size: 2.2rem;
+		font-weight: 900;
+		color: var(--color--secondary-dark);
 	}
 	&__content {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: var(--color--secondary-bright);
+		line-height: 1.5;
 	}
-	&.details {
+	.details {
+		background-color: var(--color--secondary-light);
+		border-radius: 1rem;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		padding: 1.6rem;
 		&__icon {
+			height: 4.8rem;
+			width: 4.8rem;
+			background-image: url(./images/icon-music.svg);
 		}
 
-		&__pricing-box {
-			&.title {
-			}
+		.title {
+			color: var(--color--secondary-dark);
+			font-size: 1.4rem;
 
-			&.price {
-			}
+			font-weight: 900;
 		}
+
+		.price {
+			font-size: 1.4rem;
+			font-weight: 500;
+			color: var(--color--secondary-bright);
+		}
+
 		&__link {
+			font-size: 1.3rem;
+			font-weight: 700;
+			color: var(--color--primary-bright);
+			text-decoration: none;
+			border-bottom: 1px solid var(--color--primary-bright);
+			line-height: 0.85;
+			margin-left: auto;
 		}
 	}
 	&__btn {
+		color: #fff;
+		font-family: inherit;
+		font-size: 1.5rem;
+		font-weight: 900;
+		border: none;
+		background-color: var(--color--primary-bright);
+		border-radius: 1rem;
+		padding: 1.5rem 0;
+		box-shadow: 0 1.5rem 1.5rem rgba(56, 41, 241, 0.2);
 	}
 	&__cancel {
+		color: var(--color--secondary-bright);
+		text-decoration: none;
+		font-size: 1.5rem;
+		font-weight: 900;
 	}
 }

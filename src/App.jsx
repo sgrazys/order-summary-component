@@ -3,7 +3,7 @@ import './App.scss';
 function App() {
 	return (
 		<div className='card'>
-			<header className='header'>IMAGE</header>
+			<header className='header'></header>
 			<main className='main'>
 				<h1 className='card__heading'>Order Summary</h1>
 				<p className='card__content'>
@@ -11,7 +11,7 @@ function App() {
 					podcasts on any device anywhere you like!
 				</p>
 				<div className='details'>
-					<svg className='details__icon'></svg>
+					<div className='details__icon'></div>
 					<div className='details__pricing-box'>
 						<h2 className='title'>Annual Plan</h2>
 						<p className='price'>$59.99/year</p>
