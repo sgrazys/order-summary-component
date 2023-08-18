@@ -9,6 +9,7 @@
 	--color--secondary-light: #f5f7ff;
 	--color--secondary-bright: #7280a7;
 	--color--secondary-dark: #1f2f56;
+	--color--hover: rgb(118, 108, 241);
 }
 
 html {
@@ -105,6 +106,12 @@ body {
 			border-bottom: 1px solid var(--color--primary-bright);
 			line-height: 0.85;
 			margin-left: auto;
+			transition: all 0.3s;
+
+			&:hover {
+				border-bottom: 1px solid transparent;
+				color: var(--color--hover);
+			}
 		}
 	}
 	&__btn {
@@ -116,13 +123,26 @@ body {
 		background-color: var(--color--primary-bright);
 		border-radius: 1rem;
 		padding: 1.5rem 0;
-		box-shadow: 0 1.5rem 1.5rem rgba(56, 41, 241, 0.2);
+		box-shadow: 0 1rem 1.5rem rgba(56, 41, 241, 0.3);
+		transition: all 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--color--hover);
+			box-shadow: 0 1rem 1.5rem rgba(118, 108, 241, 0.3);
+		}
 	}
 	&__cancel {
+		align-self: center;
 		color: var(--color--secondary-bright);
 		text-decoration: none;
 		font-size: 1.5rem;
 		font-weight: 900;
+		transition: all 0.3s;
+
+		&:hover {
+			color: var(--color--secondary-dark);
+		}
 	}
 }
 
